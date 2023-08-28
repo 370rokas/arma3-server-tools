@@ -58,9 +58,19 @@ Some info about syncmods.py:
 - Renames mod path's so that they work with linux
 - Creates a mods.txt file and automatically passes it to run.sh (so that all the installed mods are loaded on startup)
 
-### Run server:
+# Run server:
+I suggest you run the server in a seperate terminal (for ex. using screen) so that it doesnt stop working when you disconnect your terminal from the server (check out the code below).
+But if you still want to run the server in the current window, then just do this:
 ```sh
 bash ~/run.sh
+```
+
+### Run server with screen
+```sh
+screen -r # open a new screen
+bash ~/run.sh # in the new screen
+
+# If your connected to the server, you can close the window now, the server should continue working.
 ```
 
 ### Kill server (if its not running in your current terminal)
